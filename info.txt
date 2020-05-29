@@ -4,3 +4,6 @@
         provided testing function. Otherwise, it returns -1, indicating that no element passed the test.
 
 2) find() in JS accpets a function and returns the first value found paasing the condition in the function.
+
+3) BigInt() can be used to store big decimals in JS . Similar to BigDecimal in Java. Adding numbers to it 
+    should be done by appending n to a number. BigInt("9999999999999999999") +1n
