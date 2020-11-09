@@ -33,6 +33,7 @@ var topKFrequent = function(nums, k) {
         }
     }
     
+    //Get in descending order
     const traverse = root =>{
         if(root){
             traverse(root.right);
@@ -41,13 +42,14 @@ var topKFrequent = function(nums, k) {
         }
     }
     
-    
+    //Get frequency of all in map
     for(let i=0;i<nums.length;i++){
         state[nums[i]] = state[nums[i]] ? state[nums[i]] + 1 : 1;
     }
     
     console.log(state);
     
+    //insert each
     Object.entries(state).forEach(([key,value])=>{
         let node = new TreeNode(key,value);
         console.log(node);
