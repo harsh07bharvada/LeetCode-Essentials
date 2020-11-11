@@ -45,6 +45,7 @@ var findKthLargest = function(nums, k) {
     
     for(let n of nums){
        priorityQ.enqueue(n);
+       
         if(priorityQ.size() > k){
             priorityQ.dequeue();
         }
@@ -54,3 +55,5 @@ var findKthLargest = function(nums, k) {
     return(list[list.length -1]);
     
 };
+
+
