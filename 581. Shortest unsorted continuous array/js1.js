@@ -9,6 +9,7 @@ var findUnsortedSubarray = function(nums) {
     let min = Infinity, max = -Infinity;
 
     //If number not in proper position then check min or max
+    //Min is left Max is right
 
     for(let i=0;i<nums.length;i++){
         if(copy[i] !== nums[i]){
